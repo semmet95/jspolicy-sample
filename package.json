@@ -24,7 +24,8 @@
   },
   "scripts": {
     "compile": "tsc && npm run bundle",
-    "compile-clean": "rm -rf dist/ && tsc && npm run bundle"
+    "compile-clean": "rm -rf dist/ && tsc && npm run bundle",
+    "bundle": "webpack --config webpack.config.js"
   },
   "author": "Loft Labs, Inc.",
   "license": "Apache-2.0",
