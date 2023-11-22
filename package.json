@@ -1,0 +1,35 @@
+{
+  "name": "@jspolicy/jspolicy-typescript-starter",
+  "version": "0.0.1",
+  "description": "A simple project that shows how to use typescript with jspolicy",
+  "main": "dist/index.js",
+  "typings": "dist/index",
+  "files": [
+    "dist/**/!(bundle).*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@jspolicy/types": "^0.0.3",
+    "@jspolicy/webpack-plugin": "^0.0.5",
+    "@kubernetes/client-node": "^0.14.3",
+    "@types/jest": "^26.0.23",
+    "concurrently": "^6.0.2",
+    "jest": "^26.0.23",
+    "nodemon": "^2.0.7",
+    "ts-jest": "^26.0.23",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "scripts": {
+    "compile": "tsc && npm run bundle",
+    "compile-clean": "rm -rf dist/ && tsc && npm run bundle"
+  },
+  "author": "Loft Labs, Inc.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "github.com/loft-sh/jspolicy-typescript-starter"
+  }
+}
