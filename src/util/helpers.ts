@@ -6,7 +6,7 @@ export function denyOnErrors(...errors: Array<string[]>) {
     const combinedErrors: string[] = errors.reduce((accumulator, value) => accumulator.concat(value), []);
 
     if (combinedErrors.length > 0) {
-        deny("Request denied because of the following errors:\n-" + combinedErrors.join("\n-"));
+        deny("Request denied because of the following errors:\n-" + combinedErrors.join("\n- "));
     }
 }
 
